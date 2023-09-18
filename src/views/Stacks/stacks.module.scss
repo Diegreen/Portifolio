@@ -1,0 +1,32 @@
+.Content {
+  background-color: var(--background-card);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  margin: auto;
+  border-radius: 1rem;
+  max-width: 70%;
+  padding: 1.5rem 0;
+  text-align: start;
+
+  .Text {
+    position: absolute;
+    top: -90px;
+    background-color: var(--background-card);
+  }
+
+  img {
+    cursor: pointer;
+
+    &.Active {
+      background-color: var(--high-purple);
+      border-radius: 10px;
+    }
+  }
+}

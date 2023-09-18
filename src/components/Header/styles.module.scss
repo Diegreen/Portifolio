@@ -1,0 +1,55 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: auto;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 23%, rgba(0,0,0,0.8547794117647058) 82%, rgba(255,255,255,0) 100%);
+  
+  width: 100%;
+  max-width: 1440px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  h2 {
+    color: var(--color-white);
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  nav {
+    gap: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button, a {
+      color: var(--color-white);
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      transition: .2s ease;
+
+      &:hover {
+        margin-bottom: 5px;
+      }
+
+      &.Contact {
+        background-color: var(--normal-purple);
+        padding: .7rem 1rem;
+        padding-top: .8rem;
+        border-radius: 1rem;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+          background-color: var(--high-purple);
+          border-color: var(--color-white);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+--color-white: #ffffff;
+--color-gray: #575757;
+--dark-purple:  #221A37;
+--normal-purple: #5D3974;
+--high-purple: #A60AC7;
+--background-card: rgba(0,0,0,.9);
+--background-card-button: rgba(255,255,255,.3);
+--background-card-button-hover: rgba(255,255,255,.4);
+}
+// Globals
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#root {
+  background-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+main {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  background-image: url('../assets/background.gif');
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  padding-top: 5rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
