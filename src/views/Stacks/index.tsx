@@ -125,7 +125,7 @@ export const StacksView = () => {
             1000,
             'Venho aprimorando meu conhecimento diariamente com cursos, projetos pessoais no Github e meetings com amigos desenvolvedores experientes.',
             2000,
-            'Tente passar o mouse em cima de cada tecnologia para entender meu nível de conhecimento em cada uma delas. (Veja pelo menos 5 para ir ao próximo passo)',
+            'Tente passar o mouse ou clicar em cada tecnologia para entender meu nível de conhecimento em cada uma delas. (Veja pelo menos 5 para ir ao próximo cenário)',
             4000,
           ]}
           wrapper="p"
