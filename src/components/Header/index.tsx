@@ -24,7 +24,10 @@ export const Header = () => {
 
   return (
     <header className={styles.Header}>
-      <h2 onClick={() => updateActualPage('Home')}>Diego Almeida</h2>
+      <h2 onClick={() => updateActualPage('Home')}>
+        Diego Almeida
+        <span>Front-End</span>
+      </h2>
       <nav>
         <button 
           onClick={() => updateActualPage('Sobre')}
