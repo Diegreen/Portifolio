@@ -1,0 +1,6 @@
+.ChatBox {
+  @media (max-width: 900px) {
+    top: 6rem;
+    overflow-y: auto;
+  }
+}

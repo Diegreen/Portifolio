@@ -16,59 +16,77 @@ const StacksLabels: StacksLabelsType[] = [
   {
     section: 'html',
     texts: [
-      'Html blablabla',
+      'HTML',
       2000,
-      'blablabla',
+      'Tenho solido conhecimento nesta linguagem de marcação(Sintaxe, tags, boas práticas).',
+      1500,
+      '1 Ano de experiência',
       2000,
-      'fodase piru'
     ]
   },
   {
     section: 'css',
     texts: [
-      'css blablabla',
+      'CSS',
+      2000,
+      'Tenho sólido conhecimento, sei estilizar e montar layouts avançados e interativos.',
       2000,
     ]
   },
   {
     section: 'javascript',
     texts: [
-      'javascript blablabla',
+      'JavaScript',
       2000,
+      'Tenho um embasamento sólido, sei criar e alterar scripts, fazer requisições e dinamismo.',
+      2000,
+      'Bom conhecimento em boas práticas.',
+      1500,
+      ''
     ]
   },
   {
     section: 'jquery',
     texts: [
-      'jquery blablabla',
+      'JQuery',
+      2000,
+      'JQuery é um biblioteca leve, rápida e cheia de recursos para Javascript.',
       2000,
     ]
   },
   {
     section: 'sass',
     texts: [
-      'sass blablabla',
+      'SASS',
+      2000,
+      'Syntactically Awesome Style Sheets',
       2000,
     ]
   },
   {
     section: 'typescript',
     texts: [
-      'typescript blablabla',
+      'TypeScript',
+      2000,
+      'Tipagem estática e interfaces com fácil detecção e resolução de erros.',
       2000,
     ]
   },
   {
     section: 'reactjs',
     texts: [
-      'reactjs blablabla',
+      'ReactJS',
+      2000,
+      'Eficiente e flexível para criar interfaces com o usuário.',
       2000,
     ]
   },
   {
     section: 'nextjs',
     texts: [
-      'nextjs blablabla',
+      'NextJS',
+      2000,
+      'Criação de sites simples e para criarmos back-end de aplicações.',
       2000,
     ]
   }
@@ -88,16 +106,17 @@ export const StacksView = () => {
 
   return (
     <>
-      <div className={styles.ChatBox}>
+      <div className={`${styles.ChatBox} ${techStyles.ChatBox}`}>
         <TypeAnimation
           sequence={[
             'Minhas Stacks:',
           ]}
           wrapper="h1"
           speed={50}
-          style={{ fontSize: '2em', display: 'inline-block' }}
+          style={{ display: 'inline-block' }}
           omitDeletionAnimation
           repeat={0}
+          className={styles.TypeTitle}
         />
         <TypeAnimation
           sequence={[
@@ -109,8 +128,9 @@ export const StacksView = () => {
           wrapper="p"
           omitDeletionAnimation
           speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
-          repeat={Infinity}
+          style={{ display: 'inline-block' }}
+          repeat={0}
+          className={styles.TypeText}
         />
         {stackVisits > 5 && 
           <button onClick={() => updateActualPage('Estudos')}>Ir para: Estudos </button>
@@ -124,7 +144,7 @@ export const StacksView = () => {
           }} 
           src="/icons/html.svg" 
           alt="HTML" 
-          className={stackShow === 'html' ? techStyles.Active : ''}
+          className={stackShow === 'html' ? techStyles.html : ''}
         />
         <img 
           onMouseEnter={() => {
@@ -132,7 +152,7 @@ export const StacksView = () => {
           }} 
           src="/icons/css.svg" 
           alt="" 
-          className={stackShow === 'css' ? techStyles.Active : ''}
+          className={stackShow === 'css' ? techStyles.css : ''}
         />
         <img 
           onMouseEnter={() => {
@@ -140,7 +160,7 @@ export const StacksView = () => {
           }} 
           src="/icons/javascript.svg" 
           alt="" 
-          className={stackShow === 'javascript' ? techStyles.Active : ''}
+          className={stackShow === 'javascript' ? techStyles.js : ''}
         />
         <img 
           onMouseEnter={() => {
@@ -148,7 +168,7 @@ export const StacksView = () => {
           }} 
           src="/icons/jquery.svg" 
           alt="" 
-          className={stackShow === 'jquery' ? techStyles.Active : ''}
+          className={stackShow === 'jquery' ? techStyles.jQuery : ''}
         />
         <img 
           onMouseEnter={() => {
@@ -156,7 +176,7 @@ export const StacksView = () => {
           }} 
           src="/icons/sass.svg" 
           alt="" 
-          className={stackShow === 'sass' ? techStyles.Active : ''}
+          className={stackShow === 'sass' ? techStyles.sass : ''}
         />
         <img 
           onMouseEnter={() => {
@@ -164,7 +184,7 @@ export const StacksView = () => {
           }} 
           src="/icons/typescript.svg" 
           alt="" 
-          className={stackShow === 'typescript' ? techStyles.Active : ''}
+          className={stackShow === 'typescript' ? techStyles.TypeScript: ''}
         />
         <img 
           onMouseEnter={() => {
@@ -172,7 +192,7 @@ export const StacksView = () => {
           }} 
           src="/icons/reactjs.svg" 
           alt="" 
-          className={stackShow === 'reactjs' ? techStyles.Active : ''}
+          className={stackShow === 'reactjs' ? techStyles.React : ''}
         />
         <img 
           onMouseEnter={() => {

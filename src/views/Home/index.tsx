@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import styles from './../chatbox.module.scss'
+import styles from '../chatbox.module.scss'
 import { TypeAnimation } from 'react-type-animation';
 import { PaginationContext } from '../../context/PaginationContext';
 
@@ -25,9 +25,10 @@ export const HomeView = () => {
           ]}
           wrapper="h1"
           speed={50}
-          style={{ fontSize: '2em', display: 'inline-block' }}
+          style={{ display: 'inline-block' }}
           omitDeletionAnimation
           repeat={0}
+          className={styles.TypeTitle}
         />
         <TypeAnimation
           sequence={[
@@ -39,8 +40,9 @@ export const HomeView = () => {
           wrapper="p"
           omitDeletionAnimation
           speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          style={{ display: 'inline-block' }}
           repeat={0}
+          className={styles.TypeText}
         />
         {isDone &&
           <button onClick={() => updateActualPage('Sobre')}>Ir para: Sobre </button>

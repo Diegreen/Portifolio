@@ -7,12 +7,36 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 2rem;
+  top: 3rem;
   margin: auto;
   border-radius: 1rem;
   max-width: 70%;
   padding: 2rem 4rem;
   text-align: start;
+
+  .TypeTitle {
+    font-size: 2rem;
+  }
+
+  .TypeText {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 90%;
+    top: inherit;
+    bottom: 2rem;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+
+    .TypeTitle {
+      font-size: 1.8rem;
+    }
+  
+    .TypeText {
+      font-size: .8rem;
+    }
+  }
 
   button {
     margin-top: 2rem;

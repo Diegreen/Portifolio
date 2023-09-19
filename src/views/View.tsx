@@ -5,6 +5,8 @@ import styles from './styles.module.scss'
 import { PaginationContext } from '../context/PaginationContext'
 import { AboutView } from './About'
 import { StacksView } from './Stacks'
+import { StudingView } from './Studing'
+import { ExperienceView } from './Experience'
 
 export const ViewManager = () => {
   const {
@@ -39,8 +41,8 @@ export const ViewManager = () => {
         {actualPage === 'Home' && <HomeView />}
         {actualPage === 'Sobre' && <AboutView />}
         {actualPage === 'Stacks' && <StacksView />}
-        {actualPage === 'Estudos' && <></>}
-        {actualPage === 'Experiencia' && <></>}
+        {actualPage === 'Estudos' && <StudingView />}
+        {actualPage === 'Experiencia' && <ExperienceView/>}
       </section>
     </main>
   )
