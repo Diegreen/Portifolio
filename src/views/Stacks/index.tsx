@@ -94,7 +94,9 @@ const StacksLabels: StacksLabelsType[] = [
 
 export const StacksView = () => {
   const {  
-    updateActualPage
+    updateActualPage,
+    typeTextTime,
+    typeTitleTime
   } = useContext(PaginationContext)
 
   const [stackShow, setStackShow] = useState('')
@@ -112,7 +114,7 @@ export const StacksView = () => {
             'Minhas Stacks:',
           ]}
           wrapper="h1"
-          speed={50}
+          speed={typeTitleTime}
           style={{ display: 'inline-block' }}
           omitDeletionAnimation
           repeat={0}
@@ -120,6 +122,7 @@ export const StacksView = () => {
         />
         <TypeAnimation
           sequence={[
+            1000,
             'Venho aprimorando meu conhecimento diariamente com cursos, projetos pessoais no Github e meetings com amigos desenvolvedores experientes.',
             2000,
             'Tente passar o mouse em cima de cada tecnologia para entender meu nível de conhecimento em cada uma delas. (Veja pelo menos 5 para ir ao próximo passo)',
@@ -127,7 +130,7 @@ export const StacksView = () => {
           ]}
           wrapper="p"
           omitDeletionAnimation
-          speed={70}
+          speed={typeTextTime}
           style={{ display: 'inline-block' }}
           repeat={0}
           className={styles.TypeText}
@@ -211,6 +214,10 @@ const ExplainStacksTexts = ({
 }: {
   stackLabel: string
 }) => {
+  const {
+    typeTextTime
+  } = useContext(PaginationContext)
+
   const getStackTexts = () => {
     const findStackText = StacksLabels.find(stack => stack.section === stackLabel) as StacksLabelsType
 
@@ -223,8 +230,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -233,8 +240,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -243,8 +250,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -253,8 +260,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -263,8 +270,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -273,8 +280,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -283,8 +290,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />
@@ -293,8 +300,8 @@ const ExplainStacksTexts = ({
         <TypeAnimation
           sequence={getStackTexts()}
           wrapper="p"
-          speed={70}
-          style={{ fontSize: '1em', display: 'inline-block' }}
+          speed={typeTextTime}
+          style={{ display: 'inline-block' }}
           repeat={Infinity}
           className={techStyles.Text}
         />

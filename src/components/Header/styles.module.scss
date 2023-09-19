@@ -37,7 +37,6 @@
     transition: 0.3s ease-in;
 
     @media (max-width: 500px){
-      // font-size: 1.4rem;
       padding: 0;
     }
 
@@ -149,18 +148,23 @@
       display: flex;
       align-items: center;
       gap: .5rem;
-    }
-
-    &.Contact {
-      background-color: var(--high-blue);
       padding: .7rem 1rem;
       padding-top: .8rem;
       border-radius: 1rem;
       border-bottom: 4px solid transparent;
 
+      @media (max-width: 500px) {
+        border-top: 4px solid transparent;
+      }
+    }
+
+    &.Contact {
+      background-color: var(--high-blue);
+      
+
       &:hover {
         opacity: .9;
-        border-color: var(--color-white);
+        border-bottom-color: var(--color-white);
         color: var(--color-white);
       }
     }
@@ -168,14 +172,10 @@
     &.Github {
       background-color: var(--color-white);
       color: var(--high-blue);
-      padding: .7rem 1rem;
-      padding-top: .8rem;
-      border-radius: 1rem;
-      border-bottom: 4px solid transparent;
 
       &:hover {
         opacity: .9;
-        border-color: var(--high-blue);
+        border-bottom-color: var(--high-blue);
       }
     }
   }

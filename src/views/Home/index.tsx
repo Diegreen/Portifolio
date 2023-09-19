@@ -5,7 +5,9 @@ import { PaginationContext } from '../../context/PaginationContext';
 
 export const HomeView = () => {
   const {  
-    updateActualPage
+    updateActualPage,
+    typeTextTime,
+    typeTitleTime
   } = useContext(PaginationContext)
 
   const [isDone, setIsDone] = useState(false)
@@ -24,7 +26,7 @@ export const HomeView = () => {
             'Olá, Meu nome é Diego Almeida',
           ]}
           wrapper="h1"
-          speed={50}
+          speed={typeTitleTime}
           style={{ display: 'inline-block' }}
           omitDeletionAnimation
           repeat={0}
@@ -39,7 +41,7 @@ export const HomeView = () => {
           ]}
           wrapper="p"
           omitDeletionAnimation
-          speed={70}
+          speed={typeTextTime}
           style={{ display: 'inline-block' }}
           repeat={0}
           className={styles.TypeText}

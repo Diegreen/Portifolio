@@ -1,8 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useContext } from 'react';
 import styles from './../chatbox.module.scss'
 import { TypeAnimation } from 'react-type-animation';
+import { PaginationContext } from '../../context/PaginationContext';
+
 
 export const ExperienceView = () => {
+  const {
+    typeTextTime,
+    typeTitleTime
+  } = useContext(PaginationContext)
+  
   const [isDone, setIsDone] = useState(false)
 
   useEffect(() => {
@@ -19,7 +26,7 @@ export const ExperienceView = () => {
             'Experiência',
           ]}
           wrapper="h1"
-          speed={50}
+          speed={typeTitleTime}
           style={{ display: 'inline-block' }}
           omitDeletionAnimation
           repeat={0}
@@ -35,7 +42,7 @@ export const ExperienceView = () => {
           ]}
           wrapper="p"
           omitDeletionAnimation
-          speed={70}
+          speed={typeTextTime}
           style={{ display: 'inline-block' }}
           repeat={0}
           className={styles.TypeText}
@@ -50,7 +57,7 @@ export const ExperienceView = () => {
           ]}
           wrapper="p"
           omitDeletionAnimation
-          speed={70}
+          speed={typeTextTime}
           style={{ display: 'inline-block' }}
           repeat={0}
           className={styles.TypeText}
@@ -65,7 +72,7 @@ export const ExperienceView = () => {
           ]}
           wrapper="p"
           omitDeletionAnimation
-          speed={70}
+          speed={typeTextTime}
           style={{ display: 'inline-block' }}
           repeat={0}
           className={styles.TypeText}
@@ -77,7 +84,7 @@ export const ExperienceView = () => {
             ]}
             wrapper="p"
             omitDeletionAnimation
-            speed={70}
+            speed={typeTextTime}
             style={{ display: 'inline-block' }}
             repeat={0}
             className={styles.TypeText}
