@@ -15,7 +15,7 @@ export const Header = () => {
   useEffect(() => {
     if (!experienceIsLocked) return
 
-    // resetExperienceIsLocked
+    resetExperienceIsLocked
   }, [])
 
   const resetExperienceIsLocked = setTimeout(() => {

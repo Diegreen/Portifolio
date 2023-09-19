@@ -6,14 +6,6 @@ type PaginationContextType = {
   canViewExperience: boolean
 }
 
-const ViewList = [
-  'Home',
-  'Sobre',
-  'Stacks',
-  'Estudos',
-  'Experiencia'
-]
-
 export const PaginationContext = createContext({} as PaginationContextType)
 
 export const PaginationContextProvider = ({
