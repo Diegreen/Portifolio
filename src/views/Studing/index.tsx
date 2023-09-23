@@ -23,10 +23,10 @@ export const StudingView = () => {
     <>
       <div className={`${styles.ChatBox} ${stylesStuding.ChatBox}`}>
         <TypeAnimation
-          sequence={["Estudos:"]}
+          sequence={["Jornada de estudos:"]}
           wrapper="h1"
           speed={typeTitleTime}
-          style={{ display: "inline-block" }}
+          style={{ display: "inline-block", color: "rgba(4, 167, 179)" }}
           omitDeletionAnimation
           repeat={0}
           className={styles.TypeTitle}
@@ -34,9 +34,9 @@ export const StudingView = () => {
         <TypeAnimation
           sequence={[
             3000,
-            "Atualmente eu estou cursando a Kenzie Academy, em um curso com foco em FullStack.",
+            "Olá...",
             3000,
-            "Já fiz cursos na udemy e também na RocketSeat, deixarei os listados a baixo",
+            "Aqui irei mostrar um pouco sobre minha jornada de estudos.",
             3000,
             "Cursos e especializações abaixo:",
             1500,
@@ -54,7 +54,7 @@ export const StudingView = () => {
               <h2>Kenzie <span>Academy</span></h2>
               <p>Curso intensivo com foco em FullStack e duração de 12 meses</p>
               <p>Inicio: 05/05/2023 - Término: 05/05/2024</p>
-              <a href="https://kenzie.com.br/" target="_blank">Veja <span>mais</span></a>
+              <a href="https://kenzie.com.br/" target="_blank">Veja<span> mais</span></a>
             </div>
             <div className={stylesStuding.Coder}>
               <h2>COD<span>3</span>R</h2>
