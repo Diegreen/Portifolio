@@ -310,7 +310,3 @@ const ExplainStacksTexts = ({
     </>
   )
 }
-
-const codeWithoutVerticalBars = code.replace(/\|/g, '');
-
-console.log(codeWithoutVerticalBars);
