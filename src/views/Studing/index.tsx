@@ -26,7 +26,7 @@ export const StudingView = () => {
           sequence={["Jornada de estudos:"]}
           wrapper="h1"
           speed={typeTitleTime}
-          style={{ display: "inline-block", color: "rgba(4, 167, 179)" }}
+          style={{ display: "inline-block", color: "rgb(229,204,255)" }}
           omitDeletionAnimation
           repeat={0}
           className={styles.TypeTitle}
