@@ -92,6 +92,7 @@ const StacksLabels: StacksLabelsType[] = [
   }
 ]
 
+
 export const StacksView = () => {
   const {  
     updateActualPage,
@@ -309,3 +310,7 @@ const ExplainStacksTexts = ({
     </>
   )
 }
+
+const codeWithoutVerticalBars = code.replace(/\|/g, '');
+
+console.log(codeWithoutVerticalBars);

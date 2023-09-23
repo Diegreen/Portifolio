@@ -50,19 +50,22 @@ export const StudingView = () => {
         />
         {isDone && (
           <>
-            <div className={stylesStuding.cursos}>
-              <h2>Kenzie Academy</h2>
+            <div className={stylesStuding.KenzieAcademy}>
+              <h2>Kenzie <span>Academy</span></h2>
               <p>Curso intensivo com foco em FullStack e duração de 12 meses</p>
               <p>Inicio: 05/05/2023 - Término: 05/05/2024</p>
+              <a href="https://kenzie.com.br/" target="_blank">Veja <span>mais</span></a>
             </div>
-            <div>
-              <h2>Cod3r</h2>
+            <div className={stylesStuding.Coder}>
+              <h2>COD<span>3</span>R</h2>
               <p>Curso de Web Moderno com JavaScript</p>
               <p>Inicio 23/12/2022 - Termino: 15/05/2023</p>
+              <a href="https://www.cod3r.com.br/courses/web-moderno" target="_blank">Veja <span>mais</span></a>
             </div>
-            <div>
-              <h2>RocketSeat</h2>
-              <p>Trilha Discovery com foco em FullStack</p>
+            <div className={stylesStuding.rocketseat}>
+              <h2>rocketseat</h2>
+              <p>Trilha Discover com foco em FullStack</p>
+              <a href="https://www.rocketseat.com.br/discover" target="_blank">Veja <span>mais</span></a>
             </div>
             <button onClick={() => updateActualPage('Experiencia')}>
               Ir para: Experiências
